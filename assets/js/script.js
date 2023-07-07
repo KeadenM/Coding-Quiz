@@ -1,6 +1,4 @@
-// Code containing questions
 
-//Question lay out thanks to https://simplestepscode.com/javascript-quiz-tutorial/
 var questions = [
     {
       question: "Which of the following is used to define a function in JavaScript?",
@@ -54,7 +52,6 @@ var questions = [
       }
   ];
 
-//Variables for timer/quesitons/answers
 var totalScore = 0;
 var quizSection = document.querySelector("#quizSection");
 var answers = document.querySelector("#answerSection")
@@ -67,7 +64,6 @@ var endQuiz = false;
 
 
 
-//Function to start timer
 function setTime() {
   timerInterval = setInterval(function() {
     secondsLeft--;
@@ -83,14 +79,12 @@ function setTime() {
 
   }, 1000);
 }
-
-//Eventlistener to start quiz/timer  
+ 
 startQuiz.addEventListener("click", function () {
     setTime();
     displayQuestion(0);
 });
 
-//Creating function to display questions/answers
 function displayQuestion(index) {
   if (endQuiz) {
     return;
@@ -104,7 +98,7 @@ function displayQuestion(index) {
     quizSection.textContent = currentQuestion.question;
 
 
-//Loop to cycle through questions
+
     for (var key in currentQuestion.answers) {
       var answerOption = document.createElement("button");
       answerOption.textContent = key.toUpperCase() + ": " + currentQuestion.answers[key];
@@ -137,7 +131,6 @@ function displayQuestion(index) {
           endQuiz = true;
           clearInterval(timerInterval);
           timer.textContent = "Finished!";
-            //Collecting user intials and saving their score
 
           var userInitials = prompt("Please enter your initials:").toUpperCase();
 
@@ -146,12 +139,13 @@ function displayQuestion(index) {
             indentifier: userIdentifier,
             score: totalScore
           };
-            //Putting user data into a JSON string
+        
             var userTotalJSON = JSON.stringify(userTotalScore);
-            //local storage
+        
             localStorage.setItem("quizScore", userTotalJSON);
     }
   }
+
 
 
 
@@ -174,12 +168,11 @@ function displayHighScores() {
 
   highScoreList.appendChild(listItem);
 }         
-    
+        
 
 var resetButton = document.querySelector(".reset-button");
 
 function restartGame() {
-//Reseting all but not high scores
   totalScore = 0;
   secondsLeft = 60;
   endQuiz = false;
