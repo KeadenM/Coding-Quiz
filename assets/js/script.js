@@ -53,3 +53,25 @@ var Questions = [
     },
 ];
 
+// Var's for all aspects to  make the quiz work (timer, questions, answers, etc)
+var totalScore = 0;
+var quizArea = document.querySelector("#quizArea");
+var answers = document.querySelector("#answers")
+var QuizStart = document.querySelector("#QuizStart");
+var timeRemaining = document.querySelector("#timeRemaining");
+var timerInterval;
+var secondsLeft = 60;
+var endQuiz = false;
+
+function setTime() {
+    timerInterval = setinterval(function() {
+    secondsLeft--;
+    timer.textContent = secondsLeft + "seconds left.";
+
+    if (secondsLeft ===0) {
+        clearInterval(timerInterval);
+        timer.textContent = "Out of time!";
+        restartGame()
+        }
+    }, 1000);
+}
