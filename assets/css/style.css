@@ -44,3 +44,17 @@ button {
     color: antiquewhite;
     box-shadow: inset;
 }
+.shadow:hover {
+    box-shadow: 0 12px 16px 0 RGBA(0,0,0,0.30), 0 17px 50px 0 RGBA(0,0,0,0.25)
+}
+main{
+    font-size: 40 px;
+}
+.high-score {
+    color: yellow;
+    border: 1px solid black
+}
+
+.reset-button{
+    margin-top: 250px;
+}
