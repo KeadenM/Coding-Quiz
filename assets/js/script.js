@@ -1,52 +1,52 @@
 var Questions = [
     {
-        questions: ,
+        question: "Which of the following is not a JavaScript data type?",
         answers: {
-            a:
-            b:
-            C:
-            d:
+            a: "Boolean",
+            b: "String",
+            C: "Character",
+            d: "String"
         },
-        correctAnswer: 
+        correctAnswer: "C" 
     },
     {
-        questions: ,
+        question: "What is used to define a function wihtin JavaScript?",
         answers: {
-            a:
-            b:
-            C:
-            d:
+            a: "def",
+            b: "var",
+            C: "let",
+            d: "function",
         },
-        correctAnswer: 
+        correctAnswer: "d"
     },
     {
-        questions: ,
+        question: "Inside what HTML eleme do you put the JavaScript?" ,
         answers: {
-            a:
-            b:
-            C:
-            d:
+            a: "<js>",
+            b: "<script>",
+            C: "<scripting>",
+            d: "<javascript>",
         },
-        correctAnswer: 
+        correctAnswer: "b"
     },
     {
-        questions: ,
+        question: "What operator is used to assign a value to a variable?",
         answers: {
-            a:
-            b:
-            C:
-            d:
+            a: "=",
+            b: "-",
+            C: "X",
+            d: "*",
         },
-        correctAnswer: 
+        correctAnswer: "a"
     },
     {
-        questions: ,
+        question: "How does a FOR loop start?",
         answers: {
-            a:
-            b:
-            C:
-            d:
+            a: "for (i=0; i <=5)",
+            b: "for i=1 to 5",
+            C: "for (1 <=5; i++)",
+            d: "for (i=0; i <=5; i++)",
         },
-        correctAnswer: 
+        correctAnswer: "d"
     },
 ];
