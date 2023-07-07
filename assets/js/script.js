@@ -1,4 +1,6 @@
 var Questions = [
+    // question framework thanks to https://simplestepscode.com/javascript-quiz-tutorial/
+    // questions from w3 schools https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS
     {
         question: "Which of the following is not a JavaScript data type?",
         answers: {
@@ -50,3 +52,4 @@ var Questions = [
         correctAnswer: "d"
     },
 ];
+
