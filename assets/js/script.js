@@ -1,4 +1,3 @@
-
 var questions = [
     {
       question: "Which of the following is used to define a function in JavaScript?",
@@ -54,7 +53,7 @@ var questions = [
 
 var totalScore = 0;
 var quizSection = document.querySelector("#quizSection");
-var answers = document.querySelector("#answerSection")
+var answers = document.querySelector("#answers")
 var startQuiz = document.querySelector("#startQuiz");
 var timer = document.querySelector("#timeLeft");
 var timerInterval;
